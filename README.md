@@ -1,1 +1,1 @@
-"# GitHub Action Homework" 
+NTU-cloud-native-HW2-github-action
