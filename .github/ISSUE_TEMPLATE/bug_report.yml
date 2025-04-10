@@ -1,0 +1,35 @@
+name: Bug Report
+description: 回報一個錯誤
+title: "[Bug] 請輸入標題"
+labels: ["bug"]
+assignees: []
+body:
+  - type: textarea
+    id: bug
+    attributes:
+      label: 發生了什麼事？
+      description: 請詳細描述你遇到的問題或錯誤行為。
+      placeholder: 例如：執行 `run_all.bat` 時出現錯誤訊息 ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 重現步驟
+      description: 請列出可以重現問題的步驟
+      placeholder: |
+        1. 進入資料夾 A
+        2. 執行 XXX 指令
+        3. 看見錯誤畫面
+    validations:
+      required: false
+
+  - type: input
+    id: os
+    attributes:
+      label: 使用的作業系統
+      description: 請填寫你執行程式時的作業系統與版本
+      placeholder: 例如：Windows 11 / Ubuntu 22.04
+    validations:
+      required: false
